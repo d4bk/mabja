@@ -244,7 +244,7 @@ background-clip: text;
     }
 
     .mbj-smooth-to-social-section {
-        background: linear-gradient(180deg, #fff 80%, var(--bs-secondary) 20%);
+        background: linear-gradient(180deg, #fff 80%, var(--bs-primary) 100%);
     }
 
     /* === Typography === */
