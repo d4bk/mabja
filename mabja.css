@@ -1,0 +1,440 @@
+    /* === Root Variables === */
+    :root {
+        /* Atomik Theme Bootstrap CSS Variables - angepasst auf die Farben aus dem Screenshot */
+        /*
+    Hauptfarbe - Primary
+    --bs-primary: #7B9688;
+
+    Sekundärfarbe - Secondary
+    --bs-secondary: #A2C5AD;
+
+    Erfolgsfarbe - Light
+    --bs-success: #DEE1EA;
+
+    Informationsfarbe - Accent
+    --bs-info: #9C7C93;
+
+    Warnfarbe (unverändert)
+    --bs-warning: #ffc107;
+
+    Fehlerfarbe (unverändert)
+    --bs-danger: #dc3545;
+
+    Helle Farbe - Light
+    --bs-light: #DEE1EA;
+
+    Dunkle Farbe - Dark Accent
+    --bs-dark: #787C97;
+*/
+        /* Custom Variables */
+        --text-dark: hsl(0, 0%, 20%);
+        --text-light: rgb(250, 250, 250);
+        --base-txt-color: var(--bs-dark-accent);
+        /* original --primary-background: linear-gradient(225deg, hsla(155, 25%, 77%, 0.1) 0%, hsla(0, 42%, 84%, 0.1) 100%); */
+        --primary-background: linear-gradient(225deg, var(--bs-secondary) 0%, --bs-light 100%);
+        --header-font-family: 'Raleway', sans-serif;
+        --body-font-family: 'Arial', sans-serif;
+        --base-line-height: 1.6;
+        --base-font-size: 1rem;
+        --navbar-font-size: 18px;
+        --navbar-font-weight: 800;
+        --main-bg-color: var(--bs-light);
+    }
+
+    .socialmocial {
+        position: relative;
+        bottom: 250px;
+        min-width: 105%;
+        margin: 0px auto;
+        text-align: center;
+    }
+    .ccm-block-feature-link-text p span {
+        border: 1px solid orange;
+        color: var(--base-txt-color);
+    }
+    .ccm-block-feature-link-text p,
+    .ccm-block-feature-stacked p {
+        /*border: 1px solid red; */
+        color: var(--base-txt-color) !important;
+    }
+
+    /* === Headings Styling === */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--header-font-family) !important;
+        color: var(--bs-dark);
+    }
+
+    h1 {
+        font-size: 1.7em !important;
+        word-break: break-word;
+    }
+
+    .ccm-custom-style-pageheader h1 {
+        color: var(--text-light);
+    }
+
+    h2 {
+        font-size: 38px !important;
+        word-break: break-word;
+    }
+
+    h1 {
+
+        background: linear-gradient(1850deg, var(--bs-primary) 0%, var(--bs-secondary) 74%, var(--bs-primary) 800%);
+        /*background: radial-gradient(circle, var(--bs-accent) 0%, var(--bs-light) 47%, var(--bs-primary) 76%, var(--bs-secondary) 100%); */
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+
+        background: linear-gradient(1850deg, var(--bs-primary) 0%, var(--bs-dark-accent) 74%, var(--bs-secondary));
+        /*background: radial-gradient(circle, var(--bs-accent) 0%, var(--bs-light) 47%, var(--bs-primary) 76%, var(--bs-secondary) 100%); */
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+
+
+    /* ALT
+     background: radial-gradient(circle, rgba(123,150,136,1) 0%, rgba(222,234,223,1) 47%, rgba(201,215,213,1) 76%, rgba(162,197,173,1) 100%);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+    */
+    /* === Navigation === */
+    nav.navbar,
+    footer {
+        background: var(--bs-secondary);
+        /* background: linear-gradient(90deg, var(--bs-primary) 0%, rgba(222, 234, 223, 1) 31%, rgba(201, 215, 213, 1) 74%, var(--bs-accent)); */
+        background: linear-gradient(90deg, var(--bs-primary) 0%, var(--bs-secondary) 45%, var(--bs-light) 75%, var(--bs-accent) 90%, var(--bs-primary));
+    }
+
+    nav.navbar .navbar-nav {
+        font-size: var(--navbar-font-size);
+        font-weight: var(--navbar-font-weight);
+        text-transform: uppercase;
+        margin: 0px auto;
+        text-align: center;
+    }
+
+    .navbar-brand {
+        font-size: 42px !important;
+        font-weight: var(--navbar-font-weight) !important;
+        background: radial-gradient(circle, var(--bs-accent) 0%, var(--bs-light) 47%, var(--bs-primary) 76%, var(--bs-secondary) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-decoration: overline underline;
+    }
+
+    /* 
+    HERO- Section: 
+    */
+    .mbj-hero-header {
+         /* border: 1px solid red; */
+    }
+
+    .gradient-background {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        min-height: 80vh;
+        left: 0;
+        width: 100%;
+        z-index: -9999;
+        background: linear-gradient( 240deg,
+        var(--bs-accent), /* statt #D4C6E8 - das rosa Fairy Tale */
+        var(--bs-secondary), /* statt #B7D4C8 - unser Grün bleibt */
+        var(--bs-light), /* statt #C6E8E4 - Alabaster */
+        var(--bs-accent), /* statt #E8C6C6 - nochmal Fairy Tale */
+        var(--bs-primary), /* statt #96B4A5 - True Blue */
+        var(--bs-accent)/* statt #D4C6D8 - nochmal Fairy Tale */
+        );
+        /* origin background: linear-gradient(240deg, #D4C6E8, #B7D4C8, #C6E8E4, #E8C6C6, #96B4A5, #D4C6D8); */
+        /* background: linear-gradient(135deg, rgba(255,228,214,0.9) 0%, rgba(184,197,226,0.95) 100%); */
+        /* background: linear-gradient(135deg, var(--bs-dark-accent) 0%, var(--bs-accent) 100%); */
+        background-size: 300% 300%;
+        /*animation: gradientShift 20s ease infinite;*/
+        animation: gradientShift 20s ease infinite;
+        pointer-events: none;
+        opacity: 0.6;
+    }
+
+    @keyframes gradientShift {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    /* Hero Section */
+    /* === Content Blocks === */
+    /* Allgemeine Basisklasse für Inhaltsblöcke */
+    .mbj-content-block {
+        margin: 10px 0;
+        padding: 25px;
+        border-radius: 20px;
+        /* background: radial-gradient(circle, var(--bs-light) 90%,  var(--bs-primary) 100%); */
+        background: var(--bs-light);
+        position: relative;
+    }
+
+    /* Spezifische Klasse für Karten */
+    .mbj-card {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        /* Rahmen nur für Karten */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .mbj-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Spezifische Klasse für Sektionen */
+    .mbj-section {
+        border: 2px solid rgba(200, 200, 200, 0.5);
+        /* Rahmen nur für Sektionen */
+        padding: 60px;
+    }
+
+    /* === Additional Styling Classes === */
+    .green {
+        background-color: var(--bs-success);
+        color: var(--text-light);
+    }
+
+    .mbj-subtle-shadow {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .gradient-border::before {
+        content: '';
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        right: -15px;
+        bottom: auto;
+    }
+
+    .ccm-custom-style-pagefooter {
+        padding: 100px 0px 100px 0px;
+    }
+    .mbj-page-footer-section {
+        background: radial-gradient(circle, var(--bs-accent) 20%, var(--bs-light) 40%, var(--bs-primary) 100%, #fff 100%);
+        /* background: linear-gradient(180deg, #fff 30%, var(--bs-primary) 100%); */
+    }
+
+    .mbj-smooth-to-social-section {
+        background: linear-gradient(180deg, #fff 80%, var(--bs-secondary) 20%);
+    }
+
+    /* === Typography === */
+    .c-section-subheading_alt,
+    body,
+    html {
+        font-family: var(--body-font-family) !important;
+        font-size: clamp(1.125rem, 1.0842rem + .2041vw, 1.25rem);
+        font-weight: 300;
+        line-height: 1.5;
+        color: var(--base-txt-color) !important;
+        background: var(--primary-background);
+    }
+
+    .card-text,
+    .text-muted,
+    .footer {
+        color: var(--base-txt-color) !important;
+    }
+
+    footer .ccm-block-content,
+    .form-label,
+    /* Nur wenn Newsletter im Footer angeboten wird */
+    footer .text-muted/* Nur wenn Newsletter im Footer angeboten wird */
+    {
+        line-height: 1.0 !important;
+        font-size: 14px;
+        font-weight: 300;
+        color: var(--base-txt-color) !important;
+    }
+
+
+
+    .ccm-search-block-form {
+        margin: 0px auto;
+        margin-top: -50px;
+        min-width: 800px;
+        max-width: 850px;
+    }
+
+    .ccm-search-block-form h3 {
+        font-size: var(--navbar-font-size);
+    }
+
+    /* === Color Gradients === */
+    .green_prurple_lightgreen {
+        background: var(--bs-secondary);
+        background: linear-gradient(0deg, rgba(123, 150, 136, 1) 0%, rgba(222, 234, 223, 1) 31%, rgba(201, 215, 213, 1) 74%, rgba(162, 197, 173, 1) 100%);
+    }
+
+    .whiteToBeige {
+        background: linear-gradient(180deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 1) 40%, var(--bs-light) 100%);
+        background: -moz-linear-gradient(180deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 1) 40%, var(--bs-light) 100%);
+        background: -webkit-linear-gradient(180deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 1) 40%, var(--bs-light) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#e8e4de", GradientType=1);
+    }
+
+    /* === Animated Background === */
+    .gradient-container {
+        border: 1px solid orange !important;
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        /* Wichtig für den animierten Hintergrund */
+    }
+
+    .gradient-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        /* Hinter dem Content */
+        background-image: radial-gradient(at 40% 20%, hsla(28, 100%, 74%, 1) 0px, transparent 50%),
+        radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 1) 0px, transparent 50%),
+        radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 1) 0px, transparent 50%);
+        animation: moveGradient 8s ease-in-out infinite;
+        will-change: transform;
+        transform: translateZ(0);
+    }
+
+    @keyframes moveGradient {
+        0% {
+            transform: scale(1) rotate(0deg);
+        }
+        50% {
+            transform: scale(1.05) rotate(2deg);
+        }
+        100% {
+            transform: scale(1) rotate(0deg);
+        }
+    }
+
+    /* === Miscellaneous === */
+    .parallaxic-image {
+        opacity: 0.18;
+    }
+
+    .horizontal-pl > * > * {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: -5px;
+        /* Kompensiert den Abstand zwischen Flex-Elementen */
+    }
+
+    .horizontal-pl > * > * > * {
+        flex: 1;
+        margin: 5px;
+        /* Fügt Abstand zwischen den Elementen hinzu */
+        min-width: 150px;
+        /* Verhindert, dass Elemente zu schmal werden */
+    }
+
+
+    /* Random h Gradient */
+    /* Gradient-Animation */
+    @keyframes gradientShift {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    /* Stil für Worte */
+    .word {
+        display: inline-block;
+        transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+    }
+
+    /* Random h Gradient Ende */
+    /* === Responsive Adjustments === */
+    @media (max-width: 1200px) {
+
+        .ccm-search-block-form {
+            min-width: 100%;
+            max-width: 100%;
+            padding: 10px;
+        }
+
+        .mbj-header-search-frm {
+            width: 100% !important;
+            margin: 80px 0px 20px 0px !important;
+            padding: 0px !important;
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        .mbj-card,
+        .mbj-section {
+            margin-bottom: 20px;
+        }
+
+        .ccm-search-block-form {
+            min-width: 100%;
+            max-width: 100%;
+            padding: 10px;
+        }
+
+        .horizontal-pl > * > * > * {
+            flex-basis: calc(50% - 10px);
+            /* 2 Elemente pro Zeile auf Tablets */
+        }
+    }
+
+    @media (max-width: 600px) {
+        body {
+            font-size: 0.941rem;
+            /* Entspricht 16px */
+            padding: 0 0.882rem;
+            /* Entspricht ca. 15px */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .horizontal-pl > * > * {
+            flex-direction: column;
+            /* Stellt Elemente untereinander auf Mobilgeräten */
+        }
+
+        .horizontal-pl > * > * > * {
+            flex-basis: 100%;
+            /* Volle Breite auf Mobilgeräten */
+        }
+    }
